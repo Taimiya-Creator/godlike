@@ -65,25 +65,31 @@
   <section id="contact" class="py-24 bg-gray-900 px-6">
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-4xl font-bold text-cyan-300 mb-6 glow-cyan">Get In Touch</h2>
-      <form id="contact-form" class="space-y-6">
-        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white">
-        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white">
-        <textarea name="message" rows="5" placeholder="Your Message" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white"></textarea>
-        <button type="submit" class="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition">Send Message</button>
+      <form action="https://formspree.io/f/xrbpdglj" method="POST" class="space-y-6">
+        <input type="text" name="name" required placeholder="Your Name"
+          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-orange-500">
+        <input type="email" name="email" required placeholder="Your Email"
+          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-orange-500">
+        <textarea name="message" required placeholder="Your Message" rows="5"
+          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+        <button type="submit"
+          class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg transition-all duration-300 shadow-lg">
+          Send Message
+        </button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-<footer class="bg-black py-8 text-center border-t border-gray-800">
-  <p class="text-gray-500">&copy; 2025 GODLIKE Inc. All Rights Reserved.</p>
-  <p class="text-gray-500 mt-1">Made By Taimiya</p>
-  <div class="mt-4 space-x-4">
-    <a href="#" class="text-gray-400 hover:text-orange-400 transition">Facebook</a>
-    <a href="#" class="text-gray-400 hover:text-orange-400 transition">Instagram</a>
-    <a href="#" class="text-gray-400 hover:text-orange-400 transition">LinkedIn</a>
-  </div>
-</footer>
+  <footer class="bg-black py-8 text-center border-t border-gray-800">
+    <p class="text-gray-500">&copy; 2025 GODLIKE Inc. All Rights Reserved.</p>
+    <p class="text-gray-500 mt-1">Made By Taimiya</p>
+    <div class="mt-4 space-x-4">
+      <a href="#" class="text-gray-400 hover:text-orange-400 transition">Facebook</a>
+      <a href="#" class="text-gray-400 hover:text-orange-400 transition">Instagram</a>
+      <a href="#" class="text-gray-400 hover:text-orange-400 transition">LinkedIn</a>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
